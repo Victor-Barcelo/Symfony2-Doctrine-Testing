@@ -1,0 +1,16 @@
+{% stylesheets filter='cssrewrite,yui_css'
+output="combinedcss.css"
+debug=true
+'../vendor/twbs/bootstrap/dist/css/bootstrap.min.css'
+'@AppBundle/Resources/css/main.css' %}
+<link rel="stylesheet" href="{{ asset_url }}" />
+{% endstylesheets %}
+
+{% javascripts filter='yui_js'
+output="combinedjs.js"
+debug=true
+'../vendor/components/jquery/jquery.min.js'
+'../vendor/twbs/bootstrap/dist/js/bootstrap.min.js'
+'@AppBundle/Resources/js/navbar.js' %}
+<script src="{{ asset_url }}"></script>
+{% endjavascripts %}

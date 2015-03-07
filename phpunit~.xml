@@ -1,0 +1,17 @@
+<phpunit
+        bootstrap="vendor/autoload.php"
+        colors="true"
+>
+
+    <php>
+        <server name="KERNEL_DIR" value="/app" />
+    </php>
+
+    <testsuites>
+        <testsuite name="testSuite1">
+            <directory>src/AppBundle/Tests</directory>
+        </testsuite>
+    </testsuites>
+
+
+</phpunit>
